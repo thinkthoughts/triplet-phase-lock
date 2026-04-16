@@ -1,107 +1,85 @@
 # triplet-phase-lock
 
-**Triplet structures under a 45° cosine constraint, exploring expand → extend → resist dynamics**
+![banner](figures/tpl_banner.png)
+
+A minimal pipeline for **structure → drift → selection**.
 
 ---
 
-## Overview
+## Core idea
 
-This project studies **triplet-based sequence dynamics** under a geometric constraint:
+Triplet Phase Lock studies a simple system:
 
-- **45° cosine alignment** (cos θ ≥ 1/√(1²+1²))
-- **bounded structure without collapse**
-- **phase-lock behavior across iterations**
+- **Expand (Π)** → global structure remains invariant  
+- **Extend (π)** → local drift emerges  
+- **Resist (Π)** → strict thresholds select stable trajectories  
 
-The repo is organized around three stages:
+Key relationship:
 
-- **Pi (expand):** what expands?
-- **π (extend):** what extends?
-- **Π (resist):** what resists?
+> directional drift ↑ ⇒ strict resistance ↓
 
 ---
 
-## Core Idea
+## Notebooks
 
-A sequence (e.g. Nₖ = 24k − 25) is:
+- `01_what_expands.ipynb`  
+- `02_what_extends.ipynb`  
+- `03_what_resists.ipynb`  
+- `04_cross_stage.ipynb`  
 
-1. **expanded** into candidate triplet states  
-2. **extended** across local trajectories  
-3. **tested** for resistance via cosine alignment  
+---
 
-The goal is to identify **stable, bounded structures** under constraint.
+## Run in Colab
+
+Open any notebook directly from GitHub.
+
+Each notebook will:
+
+- clone this repo into `/content/triplet-phase-lock`
+- import from `src/`
+- run without local setup
 
 ---
 
 ## Structure
 
-```
-triplet-phase-lock/
-├── notebooks/
-│   ├── 01_what_expands.ipynb
-│   ├── 02_what_extends.ipynb
-│   ├── 03_what_resists.ipynb
-│   └── 04_cross_stage.ipynb
-├── src/
-│   ├── expand.py
-│   ├── extend.py
-│   ├── resist.py
-│   └── metrics.py
-├── figures/
-├── docs/
-└── paper/
+src/
+├── expand.py  
+├── extend.py  
+├── resist.py  
+└── metrics.py  
+
+notebooks/
+├── 01_what_expands.ipynb  
+├── 02_what_extends.ipynb  
+├── 03_what_resists.ipynb  
+├── 04_cross_stage.ipynb  
+└── history/  
+
+---
+
+## Minimal usage
+
+```python
+from src.expand import sequence_n, build_triplets_from_values
+from src.extend import direction_change
+from src.resist import cosine_scores, empirical_clean_reference
+
+k = range(1, 50)
+values = sequence_n(k)
+triplets = build_triplets_from_values(values)
+
+drift = direction_change(triplets)
+
+ref = empirical_clean_reference(triplets)
+scores = cosine_scores(triplets, ref)
 ```
 
 ---
 
-## Getting Started
+## Result
 
-Install requirements:
-
-Minimal (fast, no ML deps)
-pip install -r requirements-core.txt
-
-```
-pip install -r requirements-core.txt
-```
-
-Full environment (notebooks + torch)
-
-```
-pip install -r requirements-full.txt
-```
-
-Run notebooks in order:
-
-1. what expands  
-2. what extends  
-3. what resists  
-4. cross-stage comparison  
-
----
-
-## Key Concept
-
-**Constraint → signal > noise → structure**
-
-The 45° cosine gate acts as a minimal constraint that:
-- filters noise in high dimensions
-- preserves bounded density
-- enables phase-lock behavior
-
----
-
-## Status
-
-Initial implementation:
-- sequence generation
-- triplet construction
-- cosine alignment gate
-- basic metrics and plots
-
-Planned:
-- comparison across constructions
-- robustness under perturbation
-- phase-lock stability analysis
+structure → variation → selection
 
 ---
 
