@@ -57,14 +57,14 @@ triplet-phase-lock/
 
 Install requirements:
 
-# minimal (fast, no ML deps)
+Minimal (fast, no ML deps)
 pip install -r requirements-core.txt
 
 ```
 pip install -r requirements-core.txt
 ```
 
-# full environment (notebooks + torch)
+Full environment (notebooks + torch)
 
 ```
 pip install -r requirements-full.txt
