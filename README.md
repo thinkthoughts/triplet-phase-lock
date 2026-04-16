@@ -10,10 +10,10 @@ A minimal pipeline for **structure → drift → selection**.
 
 Click any notebook to open and run instantly:
 
-- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/01_what_expands.ipynb)
-- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/02_what_extends.ipynb)
-- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/03_what_resists.ipynb)
-- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/04_cross_stage.ipynb)
+- What expands? [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/01_what_expands.ipynb)
+- What extends? [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/02_what_extends.ipynb)
+- What resists? [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/03_what_resists.ipynb)
+- Cross stage [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/04_cross_stage.ipynb)
 
 Each notebook will:
 - clone the repo into `/content/triplet-phase-lock`
