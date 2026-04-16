@@ -6,6 +6,22 @@ A minimal pipeline for **structure → drift → selection**.
 
 ---
 
+## 🚀 Run in Colab
+
+Click any notebook to open and run instantly:
+
+- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/01_what_expands.ipynb)
+- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/02_what_extends.ipynb)
+- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/03_what_resists.ipynb)
+- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/04_cross_stage.ipynb)
+
+Each notebook will:
+- clone the repo into `/content/triplet-phase-lock`
+- import from `src/`
+- run without local setup
+
+---
+
 ## Core idea
 
 Triplet Phase Lock studies a simple system:
@@ -23,21 +39,16 @@ Key relationship:
 ## Notebooks
 
 - `01_what_expands.ipynb`  
+  → base sequence and triplet construction  
+
 - `02_what_extends.ipynb`  
+  → local differences and directional drift  
+
 - `03_what_resists.ipynb`  
+  → cosine thresholds and acceptance  
+
 - `04_cross_stage.ipynb`  
-
----
-
-## Run in Colab
-
-Open any notebook directly from GitHub.
-
-Each notebook will:
-
-- clone this repo into `/content/triplet-phase-lock`
-- import from `src/`
-- run without local setup
+  → full pipeline + drift vs resistance  
 
 ---
 
@@ -79,7 +90,25 @@ scores = cosine_scores(triplets, ref)
 
 ## Result
 
+The system separates:
+
+- invariant global structure  
+- measurable local instability  
+- threshold-based survival  
+
+Minimal form:
+
+```
 structure → variation → selection
+```
+
+---
+
+## Status
+
+- notebooks: ✅ Colab-ready  
+- src/: ✅ reusable  
+- pipeline: ✅ expand / extend / resist  
 
 ---
 
