@@ -36,10 +36,10 @@ Dual-path construction framework.
 
 Same structure, different outcome:
 
-- **IA** — invalid assignment (ZOS path)  
+- **IA** — invalid assignment: Zero-orign story (ZOS) path:  
   collapse → assignment → denial → inconsistency  
 
-- **VC** — valid construction (GOS path)  
+- **VC** — valid construction: General-origin-story (GOS) path:  
   anchor → bilateral → constraint → domain consistency  
 
 \[
