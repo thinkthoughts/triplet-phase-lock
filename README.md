@@ -5,7 +5,7 @@
 Dual-path construction framework.
 
 **Definitions:** [Glossary](./docs/glossary.md)  
-Docs: [docs/index.md](./docs/)
+Docs: [docs/index.md](./docs/)  
 📄 [Paper (PDF)](./docs/triplet_phase_lock.pdf)
 
 ---
