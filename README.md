@@ -1,5 +1,7 @@
 # triplet-phase-lock
 
+Constraint-based modeling for consistent vs inconsistent outcomes.
+
 [![triplet-phase-lock](./docs/banner.png)](https://github.com/thinkthoughts/triplet-phase-lock)
 
 Dual-path construction framework.
