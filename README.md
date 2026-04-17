@@ -63,7 +63,13 @@ You can adapt this framework for:
 - debugging mathematical reasoning  
 - validating transformations in code  
 - separating signal from noise in ML  
-- enforcing consistency in agent workflows  
+- enforcing consistency in agent workflows
+
+### 🧩 Snippets
+
+Reusable helpers for using `tpl` across repos:
+
+- [`snippets/`](./snippets/)
 ---
 
 ## 🚀 Open in Colab
