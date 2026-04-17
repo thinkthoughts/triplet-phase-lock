@@ -2,10 +2,10 @@
 
 Triplet phase-lock is a dual-path construction framework.
 
-It differentiates between:
+It distinguishes between:
 
-- IA = invalid assignments
-- VC = valid constructions
+- **IA** — invalid assignments (ZOS path)  
+- **VC** — valid constructions (GOS path)  
 
 ---
 
@@ -13,72 +13,37 @@ It differentiates between:
 
 Same structure, different outcome:
 
-- IA: collapse → assignment → denial
-- VC: anchor → bilateral → constraint → domain consistency
+- **IA**: collapse → assignment → denial → inconsistency  
+- **VC**: anchor → bilateral → constraint → domain consistency  
+
+\[
+\text{construction} \neq \text{assignment}
+\]
 
 ---
 
 ## Triplet Structure
 
-Each module follows:
+Each module is defined as:
 
-Π^(n) = (Pi_i, Pi_{i+1}, Pi_{i+2})
+\[
+\Pi^{(n)} = (Pi_i, Pi_{i+1}, Pi_{i+2})
+\]
 
-Example:
+Current modules:
 
-- Π^(0) = (0Pi, 1Pi, 2Pi)
-- Π^(1) = (3Pi, 4Pi, 5Pi)
-- Π^(2) = (6Pi, 7Pi, 8Pi)
-- Π^(3) = (9Pi, 10Pi, 11Pi)
+- Π⁽⁰⁾ = 0Pi–2Pi → *expand*  
+- Π⁽¹⁾ = 3Pi–5Pi → *extend*  
+- Π⁽²⁾ = 6Pi–8Pi → *resist*  
+- Π⁽³⁾ = 9Pi–11Pi → *synthesis*  
 
 ---
 
-## Notebook Naming
+## Dual Notebook System
+
+Each module includes two notebooks:
+
+- **IA** → invalid assignment path  
+- **VC** → valid construction path  
 
 Format:
-
-[index]_[Pi-range]_[verb]_[IA|VC].ipynb
-
-Examples:
-
-- 00_0Pi-2Pi_expand_IA.ipynb
-- 00_0Pi-2Pi_expand_VC.ipynb
-
----
-
-## First Modules
-
-- notebooks/00_0Pi-2Pi_expand_IA.ipynb
-- notebooks/00_0Pi-2Pi_expand_VC.ipynb
-
----
-
-## Classification
-
-See:
-
-docs/zabcd.md
-
-Defines:
-
-- ZABCD (failure modes)
-- ABCD (valid construction)
-
----
-
-## Key Principle
-
-construction ≠ assignment
-
-- IA: x → y (no constraint)
-- VC: x = x (validated)
-
----
-
-## Summary
-
-Triplet phase-lock defines a shared grammar.
-
-ZABCD classifies failure.
-
-ABCD defines completion.
