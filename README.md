@@ -4,6 +4,7 @@
 
 Dual-path construction framework.
 
+**Definitions:** [Glossary](./docs/glossary.md)
 ---
 
 ## 🧭 Triplet Progression
