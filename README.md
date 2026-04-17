@@ -16,16 +16,17 @@ This repo is organized by triplets of Pi-stages:
 - `03_9Pi-11Pi_synthesis.ipynb`
 
 See `docs/pi_triplets.md`.
+
 ---
 
 ## 🚀 Run in Colab
 
 Click any notebook to open and run instantly:
 
-- 00_0Pi-2Pi_expand: What expands? [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/01_what_expands.ipynb)
-- 01_3Pi-5Pi_extend: What extends? [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/02_what_extends.ipynb)
-- 02_6Pi-8Pi_resist:  What resists? [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/03_what_resists.ipynb)
-- 03_9Pi-11Pi_synthesis.: Cross stage [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/04_cross_stage.ipynb)
+- 00_0Pi-2Pi_expand: → build sequence → structure [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/01_what_expands.ipynb)
+- 01_3Pi-5Pi_extend: → measure drift → variation [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/02_what_extends.ipynb)
+- 02_6Pi-8Pi_resist: → threshold → selection [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/03_what_resists.ipynb)
+- 03_9Pi-11Pi_synthesis.: → combine → synthesis [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/04_cross_stage.ipynb)
 
 Each notebook will:
 - clone the repo into `/content/triplet-phase-lock`
