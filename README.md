@@ -1,6 +1,6 @@
 # triplet-phase-lock
 
-![triplet-phase-lock](./docs/banner.png)
+[![triplet-phase-lock](./docs/banner.png)](https://github.com/thinkthoughts/triplet-phase-lock)
 
 Dual-path construction framework.
 
