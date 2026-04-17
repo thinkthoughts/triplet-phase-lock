@@ -6,6 +6,12 @@ Dual-path construction framework.
 
 ---
 
+## 🧭 Triplet Progression
+
+![triplet progression](./docs/triplet_progression_light.png)
+
+---
+
 ## 🚀 Open in Colab
 
 ### Π⁽⁰⁾ — expand (0Pi–2Pi)
@@ -78,12 +84,12 @@ See: `docs/zabcd.md`
 
 ## 🔬 Minimal Examples
 
-IA:
+**IA**
 - \(1 - 1 = 0\)
 - \(0 \mapsto 0.96\)
 - \(2 = 0.96\)
 
-VC:
+**VC**
 - \(2 = 1 + 1\)
 - \(\frac{24}{25} = 0.96\)
 - \(\sqrt{-1.96} = 1.4i\)
@@ -91,3 +97,13 @@ VC:
 ---
 
 ## 📁 Structure
+
+```text
+triplet-phase-lock/
+├── notebooks/        # IA / VC paired notebooks
+├── src/              # shared stages, labels, examples
+├── docs/             # diagrams + glossary
+│   ├── banner.png
+│   ├── triplet_progression_light.png
+│   └── zabcd.md
+└── README.md
