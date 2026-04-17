@@ -4,7 +4,9 @@
 
 Dual-path construction framework.
 
-**Definitions:** [Glossary](./docs/glossary.md)
+**Definitions:** [Glossary](./docs/glossary.md)  
+Docs: [docs/index.md](./docs/)
+
 ---
 
 ## 🧭 Triplet Progression
@@ -37,15 +39,17 @@ Dual-path construction framework.
 
 Same structure, different outcome:
 
-- **IA** — invalid assignment: Zero-orign story (ZOS) path:  
+- **IA** — invalid assignment (ZOS path)  
   collapse → assignment → denial → inconsistency  
 
-- **VC** — valid construction: General-origin-story (GOS) path:  
+- **VC** — valid construction (GOS path)  
   anchor → bilateral → constraint → domain consistency  
 
 \[
 \text{construction} \neq \text{assignment}
 \]
+
+This repository serves as the structural foundation for a broader set of constraint-based systems spanning geometry, quantum simulation, and autonomous agents.
 
 ---
 
@@ -99,12 +103,54 @@ See: `docs/zabcd.md`
 
 ## 📁 Structure
 
-```text
+```
 triplet-phase-lock/
-├── notebooks/        # IA / VC paired notebooks
-├── src/              # shared stages, labels, examples
-├── docs/             # diagrams + glossary
+├── notebooks/
+├── src/
+├── docs/
 │   ├── banner.png
 │   ├── triplet_progression_light.png
-│   └── zabcd.md
+│   ├── glossary.md
+│   ├── zabcd.md
+│   └── index.md
 └── README.md
+```
+
+---
+
+## 🔁 Reproducibility
+
+All examples and constructions are reproducible via Python/Jupyter notebooks  
+(Colab-compatible) provided in this repository.
+
+---
+
+## 🔗 Related Work
+
+These repositories apply or extend the triplet phase-lock framework across different systems.
+
+### Core Applications (connected)
+
+- https://github.com/thinkthoughts/projection-constraint-lab  
+- https://github.com/thinkthoughts/rydberg-parameter-lab  
+- https://github.com/thinkthoughts/btz-phase-lock  
+
+### Next Integrations (in progress)
+
+- https://github.com/thinkthoughts/ion-benchmark-lab  
+- https://github.com/thinkthoughts/ion-trap-parameter-lab  
+- https://github.com/thinkthoughts/agent-constraint-gate  
+- https://github.com/thinkthoughts/constraint-branch-collection  
+
+---
+
+### Interpretation
+
+- Triplet Phase-Lock → structural core (IA vs VC)  
+- Constraint Labs → filtering, stability  
+- Quantum Systems → physical instantiations  
+- Agent Systems → executable constraints  
+
+\[
+\text{constraint} \Rightarrow \text{signal} > \text{noise}
+\]
