@@ -16,6 +16,54 @@ Docs: [docs/index.md](./docs/)
 
 ---
 
+## ⚡ Quick Start (2 min)
+
+1. Open a notebook (IA or VC below)
+2. Run all cells (Colab)
+3. Compare outcomes:
+
+- IA → inconsistent results  
+- VC → consistent results  
+
+Start here:
+
+- [![IA](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/00_0Pi-2Pi_expand_IA.ipynb) Π⁽⁰⁾ IA  
+- [![VC](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/00_0Pi-2Pi_expand_VC.ipynb) Π⁽⁰⁾ VC  
+
+---
+
+## 🛠️ How To Use
+
+### 1. Compare IA vs VC
+Run paired notebooks at the same stage:
+- IA → shows inconsistency (assignment without constraint)
+- VC → shows consistency (constraint-preserving construction)
+
+### 2. Follow progression
+Move through stages:
+- Π⁽⁰⁾ → expand (initial behavior)
+- Π⁽¹⁾ → extend (structure vs drift)
+- Π⁽²⁾ → resist (stability vs breakdown)
+- Π⁽³⁾ → synthesis (full system behavior)
+
+### 3. Use as a diagnostic tool
+Apply the framework to:
+- equations  
+- code  
+- models  
+
+Ask:
+- Is this constructed (constraint-preserving)?
+- Or assigned (unconstrained mapping)?
+
+### 4. Use in your own systems
+You can adapt this framework for:
+- debugging mathematical reasoning  
+- validating transformations in code  
+- separating signal from noise in ML  
+- enforcing consistency in agent workflows  
+---
+
 ## 🚀 Open in Colab
 
 ### Π⁽⁰⁾ — expand (0Pi–2Pi)
