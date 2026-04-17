@@ -6,14 +6,26 @@ A minimal pipeline for **structure → drift → selection**.
 
 ---
 
+## Pi-triplet structure
+
+This repo is organized by triplets of Pi-stages:
+
+- `00_0Pi-2Pi_expand.ipynb`
+- `01_3Pi-5Pi_extend.ipynb`
+- `02_6Pi-8Pi_resist.ipynb`
+- `03_9Pi-11Pi_synthesis.ipynb`
+
+See `docs/pi_triplets.md`.
+---
+
 ## 🚀 Run in Colab
 
 Click any notebook to open and run instantly:
 
-- Notebook 1: What expands? [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/01_what_expands.ipynb)
-- Notebook 2: What extends? [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/02_what_extends.ipynb)
-- Notebook 3:  What resists? [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/03_what_resists.ipynb)
-- Notebook 4: Cross stage [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/04_cross_stage.ipynb)
+- 00_0Pi-2Pi_expand: What expands? [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/01_what_expands.ipynb)
+- 01_3Pi-5Pi_extend: What extends? [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/02_what_extends.ipynb)
+- 02_6Pi-8Pi_resist:  What resists? [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/03_what_resists.ipynb)
+- 03_9Pi-11Pi_synthesis.: Cross stage [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/04_cross_stage.ipynb)
 
 Each notebook will:
 - clone the repo into `/content/triplet-phase-lock`
