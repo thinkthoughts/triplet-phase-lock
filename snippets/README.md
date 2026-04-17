@@ -1,10 +1,12 @@
-# TPL Snippet Pack
+# TPL Snippets
 
-Files:
+Reusable helpers for loading and using `tpl` across repositories.
 
-- `tpl_bootstrap.py` → reusable helper module
-- `notebook_bootstrap_cell.py` → pasteable notebook cell
-- `example_usage.py` → minimal example
+## Files
+
+- `tpl_bootstrap.py` → ensures `tpl` is importable
+- `notebook_bootstrap_cell.py` → copy/paste into notebooks
+- `example_usage.py` → minimal working example
 
 ## Typical usage
 
@@ -13,11 +15,3 @@ from tpl_bootstrap import ensure_tpl_importable
 ensure_tpl_importable()
 
 from tpl.classify import classify_consistency
-from tpl.stages import stage_name
-```
-
-## Colab clone command
-
-```python
-!git clone https://github.com/thinkthoughts/triplet-phase-lock.git /content/triplet-phase-lock
-```
