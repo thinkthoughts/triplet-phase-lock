@@ -1,130 +1,84 @@
 # triplet-phase-lock
 
-![banner](figures/tpl_banner.png)
+Triplet phase-lock is a dual-path construction framework.
 
-A minimal pipeline for **structure → drift → selection**.
+It differentiates between:
 
----
-
-## Pi-triplet structure
-
-This repo is organized by triplets of Pi-stages:
-
-- `00_0Pi-2Pi_expand.ipynb`
-- `01_3Pi-5Pi_extend.ipynb`
-- `02_6Pi-8Pi_resist.ipynb`
-- `03_9Pi-11Pi_synthesis.ipynb`
-
-See `docs/pi_triplets.md`.
+- IA = invalid assignments
+- VC = valid constructions
 
 ---
 
-## 🚀 Run in Colab
+## Core Idea
 
-Click any notebook to open and run instantly:
+Same structure, different outcome:
 
-- 00_0Pi-2Pi_expand: → build sequence → structure [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/01_what_expands.ipynb)
-- 01_3Pi-5Pi_extend: → measure drift → variation [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/02_what_extends.ipynb)
-- 02_6Pi-8Pi_resist: → threshold → selection [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/03_what_resists.ipynb)
-- 03_9Pi-11Pi_synthesis.: → combine → synthesis [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thinkthoughts/triplet-phase-lock/blob/main/notebooks/04_cross_stage.ipynb)
-
-Each notebook will:
-- clone the repo into `/content/triplet-phase-lock`
-- import from `src/`
-- run without local setup
+- IA: collapse → assignment → denial
+- VC: anchor → bilateral → constraint → domain consistency
 
 ---
 
-## Core idea
+## Triplet Structure
 
-Triplet Phase Lock studies a simple system:
+Each module follows:
 
-- **Expand (Π)** → global structure remains invariant  
-- **Extend (π)** → local drift emerges  
-- **Resist (Π)** → strict thresholds select stable trajectories  
+Π^(n) = (Pi_i, Pi_{i+1}, Pi_{i+2})
 
-Key relationship:
+Example:
 
-> directional drift ↑ ⇒ strict resistance ↓
-
----
-
-## Notebooks
-
-- `01_what_expands.ipynb`  
-  → base sequence and triplet construction  
-
-- `02_what_extends.ipynb`  
-  → local differences and directional drift  
-
-- `03_what_resists.ipynb`  
-  → cosine thresholds and acceptance  
-
-- `04_cross_stage.ipynb`  
-  → full pipeline + drift vs resistance  
+- Π^(0) = (0Pi, 1Pi, 2Pi)
+- Π^(1) = (3Pi, 4Pi, 5Pi)
+- Π^(2) = (6Pi, 7Pi, 8Pi)
+- Π^(3) = (9Pi, 10Pi, 11Pi)
 
 ---
 
-## Structure
+## Notebook Naming
 
-src/
-├── expand.py  
-├── extend.py  
-├── resist.py  
-└── metrics.py  
+Format:
 
-notebooks/
-├── 01_what_expands.ipynb  
-├── 02_what_extends.ipynb  
-├── 03_what_resists.ipynb  
-├── 04_cross_stage.ipynb  
-└── history/  
+[index]_[Pi-range]_[verb]_[IA|VC].ipynb
+
+Examples:
+
+- 00_0Pi-2Pi_expand_IA.ipynb
+- 00_0Pi-2Pi_expand_VC.ipynb
 
 ---
 
-## Minimal usage
+## First Modules
 
-```python
-from src.expand import sequence_n, build_triplets_from_values
-from src.extend import direction_change
-from src.resist import cosine_scores, empirical_clean_reference
-
-k = range(1, 50)
-values = sequence_n(k)
-triplets = build_triplets_from_values(values)
-
-drift = direction_change(triplets)
-
-ref = empirical_clean_reference(triplets)
-scores = cosine_scores(triplets, ref)
-```
+- notebooks/00_0Pi-2Pi_expand_IA.ipynb
+- notebooks/00_0Pi-2Pi_expand_VC.ipynb
 
 ---
 
-## Result
+## Classification
 
-The system separates:
+See:
 
-- invariant global structure  
-- measurable local instability  
-- threshold-based survival  
+docs/zabcd.md
 
-Minimal form:
+Defines:
 
-```
-structure → variation → selection
-```
+- ZABCD (failure modes)
+- ABCD (valid construction)
 
 ---
 
-## Status
+## Key Principle
 
-- notebooks: ✅ Colab-ready  
-- src/: ✅ reusable  
-- pipeline: ✅ expand / extend / resist  
+construction ≠ assignment
+
+- IA: x → y (no constraint)
+- VC: x = x (validated)
 
 ---
 
-## License
+## Summary
 
-MIT
+Triplet phase-lock defines a shared grammar.
+
+ZABCD classifies failure.
+
+ABCD defines completion.
