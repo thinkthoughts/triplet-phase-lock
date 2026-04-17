@@ -43,7 +43,7 @@ Same structure, different outcome:
   collapse → assignment → denial → inconsistency  
 
 - **VC** — valid construction (GOS path)  
-  anchor → bilateral → constraint → domain consistency  
+  anchor → bilateral → constraint → domain consistency
 
 \[
 \text{construction} \neq \text{assignment}
@@ -98,6 +98,19 @@ See: `docs/zabcd.md`
 - \(2 = 1 + 1\)
 - \(\frac{24}{25} = 0.96\)
 - \(\sqrt{-1.96} = 1.4i\)
+
+---
+
+## ⚖️ Core Principles
+
+- **construction ≠ assignment**  
+- **constraint → signal > noise**  
+- **GOS → structure**  
+- **ZOS → inconsistency**  
+
+Interpretation:
+- IA (ZOS) → collapse, reassignment, mismatch  
+- VC (GOS) → anchor, constraint, domain consistency
 
 ---
 
