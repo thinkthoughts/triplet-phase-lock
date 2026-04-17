@@ -151,6 +151,4 @@ These repositories apply or extend the triplet phase-lock framework across diffe
 - Quantum Systems → physical instantiations  
 - Agent Systems → executable constraints  
 
-\[
-\text{constraint} \Rightarrow \text{signal} > \text{noise}
-\]
+**constraint → signal > noise**
